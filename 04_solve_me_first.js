@@ -18,9 +18,10 @@
 
 function solveMeFirst(a, b) {
   // Hint: Type return a+b below
-  const calculo = a + b;
-  console.log(`Soma: ${calculo}`);   
-  return calculo
+  return a + b;
 }
 
-solveMeFirst(7, 3);
+console.log(solveMeFirst(7, 3));
+console.log(solveMeFirst(10, 2));
+console.log(solveMeFirst(20, 10));
+
