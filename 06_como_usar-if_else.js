@@ -29,40 +29,88 @@
  *  2. INTEGER_ARRAY b
  */
   
-
-function compareTriplets(a, b) {
-  // Write your code here
   let totalA = 0;
   let totalB = 0;
 
-  if (a[0] > b[0]) {
-    totalA += 1;
-  } else if(a[0] === b[0]){
-     totalA += 0;
-     totalB += 0;
-  } else {
-    totalB += 1;
-  }
+// function compareTriplets(a, b) {
+//   // Write your code here
 
-  if (a[1] > b[1]) {
-    totalA += 1;
-  } else if (a[1] === b[1]) {
-    totalA += 0;
-    totalB += 0;
-  } else {
-    totalB += 1;
-  }
+//   if (a[0] > b[0]) {
+//     totalA += 1;
+//   } else if(a[0] === b[0]){
+//      totalA += 0;
+//      totalB += 0;
+//   } else {
+//     totalB += 1;
+//   }
 
-  if (a[2] > b[2]) {
-    totalA += 1;
-  } else if (a[2] === b[2]) {
-    totalA += 0;
-    totalB += 0;
-  } else {
-    totalB += 1;
+//   if (a[1] > b[1]) {
+//     totalA += 1;
+//   } else if (a[1] === b[1]) {
+//     totalA += 0;
+//     totalB += 0;
+//   } else {
+//     totalB += 1;
+//   }
+
+//   if (a[2] > b[2]) {
+//     totalA += 1;
+//   } else if (a[2] === b[2]) {
+//     totalA += 0;
+//     totalB += 0;
+//   } else {
+//     totalB += 1;
+//   }
+//   console.log({ totalA });
+//   console.log({ totalB });
+//   return [totalA, totalB]
+// }
+
+// compareTriplets([1, 2, 3], [3, 2, 1]);
+
+// -------------------------------------------------------------
+
+// REFATORAÇÂO
+// function compareTriplets(a, b) {
+//   // Write your code here
+
+//   if (a[0] > b[0]) {
+//     totalA += 1;
+//   } else if(a[0] < b[0]){
+//     totalB += 1;
+//   }
+
+//   if (a[1] > b[1]) {
+//     totalA += 1;
+//   } else if (a[1] < b[1]) {
+//     totalB += 1;
+//   }
+
+//   if (a[2] > b[2]) {
+//     totalA += 1;
+//   } else if (a[2] < b[2]) {
+//     totalB += 1;
+//   }
+//   console.log({ totalA });
+//   console.log({ totalB });
+//   return [totalA, totalB]
+// }
+
+// compareTriplets([1, 2, 3], [3, 2, 1]);
+
+//--------------------------------------------------------
+
+// OU
+function compareTriplets(a, b) {
+  // Write your code here
+  for (let index = 0; index < a.length; index++)  {
+    if (a[index] > b[index]) {
+      totalA += 1;
+    } else if (a[index] < b[index]) {
+      totalB += 1;
+    }
   }
-  console.log({ totalA });
-  console.log({ totalB });
+  console.log([totalA, totalB]);
   return [totalA, totalB]
 }
 
