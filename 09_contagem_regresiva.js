@@ -8,8 +8,12 @@ function contageRegresiva(x) {
   for (let index = 1; index <= x; index ++) {
     let subtracao = x - index;
     contagemRegrsivaArray.push(subtracao)
+    contagemRegrsivaArray.join('...')
   }
+
   console.log({ contagemRegrsivaArray });
+  console.log( contagemRegrsivaArray.join('...'));
+
 }
 
 console.log({ contagemRegrsivaArray });
