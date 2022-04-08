@@ -21,7 +21,7 @@ Isto é:
 // ou
 
 function diferenca(x) {
-  x < 10 ? console.log(10 - x) : console.log(x - 10);
+  x < 10 ? console.log(10 - x) : console.log(`O resultado é: ${x - 10}`);
 }
 
 diferenca(20)
