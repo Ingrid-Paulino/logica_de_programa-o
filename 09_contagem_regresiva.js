@@ -4,18 +4,30 @@
 const contagemRegrsivaArray = []
 
 function contageRegresiva(x) {
-  console.log(x);
   for (let index = 1; index <= x; index ++) {
     let subtracao = x - index;
     contagemRegrsivaArray.push(subtracao)
-    contagemRegrsivaArray.join('...')
   }
+  contagemRegrsivaArray.join('...')
+  // contagemRegrsivaArray.push('!!!')
 
-  console.log({ contagemRegrsivaArray });
-  console.log( contagemRegrsivaArray.join('...'));
-
+  // console.log({ contagemRegrsivaArray });
+  console.log( `${contagemRegrsivaArray.join('...')}!!!`);
 }
+contageRegresiva(11);
 
 console.log({ contagemRegrsivaArray });
 
-contageRegresiva(11);
+
+//ou
+
+function contageRegresiva2(x) {
+  let str = `${x}`;
+  for (let index = x - 1; index >= 0; index --) {
+    str += '...' + index;
+  }
+  console.log(`${str}!!!`);
+  return `${str}!!!`
+}
+
+contageRegresiva2(10);
