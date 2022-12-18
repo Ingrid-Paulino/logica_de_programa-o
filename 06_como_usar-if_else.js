@@ -13,6 +13,7 @@
 
 // Exemplo
 
+
 // a = [1, 2, 3]
 // b = [3, 2, 1]
 // Para os elementos *0*, Bob recebe um ponto porque a[0] .
